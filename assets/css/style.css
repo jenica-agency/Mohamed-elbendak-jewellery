@@ -70,10 +70,10 @@ body{
    position: absolute;
    width: 100%;
    transition: 0.3s transform ease-in-out;
-   -webkit-transition: 0.3s transform ease-in-out;
-   -moz-transition: 0.3s transform ease-in-out;
-   -ms-transition: 0.3s transform ease-in-out;
-   -o-transition: 0.3s transform ease-in-out;
+   -webkit-transition: 0.4s transform ease-in-out;
+   -moz-transition: 0.4s transform ease-in-out;
+   -ms-transition: 0.4s transform ease-in-out;
+   -o-transition: 0.4s transform ease-in-out;
 }
 .nav-item > .nav-link:hover:before{
     transform: scaleX(1);
@@ -82,7 +82,7 @@ body{
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
     transform-origin: 0 50%;
-    transition-delay: 0.3s;
+    /* transition-delay: 0.3s; */
 }
 .navbar .navbar-toggler{
     border-color: var(--Gold);
@@ -212,6 +212,79 @@ body{
     color: var(--darkColor);
     background-color: var(--Gold);
     border: var(--Gold) 2px solid;
+}
+/***************************************************************/
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0px;
+    position: relative;
+    margin-bottom: 35px;
+    z-index: -99;
+
+}
+.gallary-header{
+    font-family: "calisga", sans-serif;
+}
+.gallary-txt{
+    font-size: 15px;
+}
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #ffebdc;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    width: 100%;
+}
+.card-content img{
+    max-width: 280px;
+    width: 100%;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.swiper-navBtn {
+    color: #e2979d;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #e2979d;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #e2979d;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e2979d;
 }
 
 /* responsive  */
