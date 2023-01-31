@@ -1,25 +1,15 @@
 // function count nums 
-let nums = document.querySelectorAll(".nums .num"); 
-
-let section = document.querySelector(".middle-count");
-let started = false; // Function Started ? No
-
-window.onscroll = function () {
-  if (window.scrollY >= section.offsetTop) {
-    if (!started) {
-      nums.forEach((num) => startCount(num));
-    }
-    started = true;
-  }
-};
-
+let nums = document.querySelectorAll(".count-sec .container .row .middle-count .nums .num"); 
+console.log(nums);
 function startCount(el) {
   let goal = el.dataset.goal;
   console.log(goal);
   let count = setInterval(() => {
     el.textContent++;
+    
     if (el.textContent == goal) {
       clearInterval(count);
     }
-  }, 2000 / goal);
+  }, 2000/goal);
 }
+  nums.forEach((num) => startCount(num));
