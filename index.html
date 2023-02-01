@@ -6,6 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./assets/imgs/logo-gold.png">
 
+        <!-- links font awesome icon  -->
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.2.1-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.2.1-web/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.2.1-web/js/all.min.js"
+    />
+
         <!-- fonts links  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +38,6 @@
             crossorigin="anonymous">
 
         <!-- css links  -->
-        <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -59,7 +72,7 @@
                                 <a class="nav-link" href="#collection">Collections</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#about">about</a>
                             </li>
                         </ul>
                     </div>
@@ -103,7 +116,7 @@
                 <div class="row">
                     <div class="left-count col-lg-2 col-md-2">
                         <img
-                            src="./assets/imgs/dyamonde-stone-removebg-preview.png"
+                            src="./assets/imgs/still-life-object-removebg-preview.png"
                             alt="photo not found" width="100">
                     </div>
                     <div class="middle-count col-lg-6 ">
@@ -186,8 +199,147 @@
         </div>
         <!-- end collection section  -->
 
-        <!-- swiper java script link  -->
-        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <!-- start gallery section  -->
+        <div class="container-fluid gallery">
+            <div class="gallery-sec slide-container swiper mt-5">
+            <h5 class="gallery-header"> our products </h5>
+           
+            <div class="slide-content pt-5">
+                <div class="card-swiper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                        <img src="./assets/imgs/ring2.jpg" alt="photo not found">
+                        
+                        </div>
+                        <div class="button-more pb-3 row pt-4">
+                            <h5 class="name col-7"> rings </h5>
+                            <button type="button" class="btn btn-outline-warning col-5 gallery-btn">  
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                        <img src="./assets/imgs/earring.jpg" alt="photo not found">
+                        
+                        </div>
+                        <div class="button-more pb-3 row pt-4">
+                            <h5 class="name col-7"> Earrings </h5>
+                            <button type="button" class="btn btn-outline-warning col-5 gallery-btn"> 
+                                 <i class="fa-solid fa-angles-right"></i>
+                             </button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                        <img src="./assets/imgs/ring2.jpg" alt="photo not found" >
+                        
+                        </div>
+                        <div class="button-more pb-3 row pt-4">
+                            <h5 class="name col-7"> Necklaces </h5>
+                            <button type="button" class="btn btn-outline-warning col-5 gallery-btn">  
+                                <i class="fa-solid fa-angles-right"></i> 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                        <img src="./assets/imgs/earring.jpg" alt="photo not found">
+                        
+                        </div>
+                        <div class="button-more pb-3 row pt-4">
+                            <h5 class="name col-7"> Bracelets </h5>
+                            <button type="button" class="btn btn-outline-warning col-5 gallery-btn">  
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                        <img src="./assets/imgs/ring2.jpg" alt="photo not found">
+                        
+                        </div>
+                        <div class="button-more pb-3 row pt-4">
+                            <h5 class="name col-7"> Anklets </h5>
+                            <button type="button" class="btn btn-outline-warning col-5 gallery-btn"> 
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+      
+        </div>
+        </div>
+        <!-- end gallery  -->
+
+        <!-- start about section  -->
+        <div class="about-sec mt-5">
+            <div class="container">
+                <div class="row" id="about">
+                    <div class="about-left col-lg-6 col-md-6 col-sm-12 mt-4">
+                        <h1 class="about-cote ">
+                           88 years of Excellence
+                        </h1>
+                        <p class=" pt-3 about-text">
+                            Mohamed Elbendak jewellery brings us that charm and excitement since 1935, this is grand and old brand with two branches in Alexandria, you can find your perfect pieces that are at formerly distinctive and enduring.
+                             Our jewelry, accessories, and objects balance vitality with simplicity, each piece is appealing to the eye, inviting to the touch!
+                        </p>
+                    </div>
+                    <div class="about-right col-lg-6 col-md-6 col-sm-12 row">
+                        <div class="back-img-about ">
+                            <img src="./assets/imgs/hand-img.jpg" alt="about img not found" class="back-about-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end about -->
+
+      <div class="slider-three-subscribe mt-5" id="contact-us">
+        <div class="container subscribe-content">
+            <div class="row">
+            <div class="subscribe-left col-lg-5 col-md-6 col-sm-12">
+                <img src="./assets/imgs/subscribe.png" alt="image not found" />
+            </div>
+            <div class="subscribe-right col-lg-7 col-md-6 col-sm-12">
+                <div class="row subscribe-content-left">
+                <div class="top-subscribe col-12">
+                    <h4 class="h-one">Subscribe to our</h4>
+                    <h4 class="h-two">Newsletter</h4>
+                </div>
+                <div class="end-subscribe col-12">
+                    <div class="group-input row mb-3">
+                    <form action="" id="subform">
+                        <input
+                        type="email"
+                        class="col-8"
+                        id="submail"
+                        placeholder="Enter Your Email"
+                        />
+                        <button class="col-4" id="sub-submit" type="submit">
+                        Send
+                        </button>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+            
+       
 
         <!-- link bootstrap  -->
         <script
@@ -195,7 +347,10 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
 
+            <!-- swiper java script link  -->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
         <!-- main java script links  -->
         <script src="./assets/js/main.js"></script>
+         
     </body>
 </html>
