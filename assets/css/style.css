@@ -506,7 +506,17 @@ footer {
 .right-footer a:hover{
     color: var(--lightColor);
 }
+/*************************gallery page ***********/
 
+.slider-gallery-page div img{
+    width: 100%;
+    margin-top: 6%;
+    height:100%;
+
+}
+.gallery-collection-txt{
+    font-family: "calisga", sans-serif;
+}
 /* responsive  media */
 @media screen and (max-width : 480px) and (min-width:300px){
     .brand-name {
@@ -516,6 +526,7 @@ footer {
     body{
         font-size: 15px;
     }
+    
 }
 @media screen and (max-width:992px) and (min-width: 768px) {
     .cover-left .cover-cote{
@@ -534,10 +545,10 @@ footer {
         text-align: center;
         padding-right: 0;
     }
-         .footer-row,
-         .footer-row .right-footer {
-             text-align: center;
-         }
+    .footer-row,
+    .footer-row .right-footer {
+        text-align: center;
+    }
 }
 @media screen and (max-width : 1400px) and (min-width : 1200px){
     .cover-right img {
@@ -710,4 +721,13 @@ footer {
         display: none;
     }
 }
-
+@media screen and (max-width: 768px) and (min-width:480px){
+    .slider-gallery-page div img {
+            margin-top: 12%;
+        }
+}
+@media screen and (max-width : 480px) and (min-width : 300px) {
+    .slider-gallery-page div img {
+            margin-top: 20%;
+        }
+}
