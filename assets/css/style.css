@@ -24,7 +24,6 @@ body{
     background-color: var(--darkColor);
     color: var(--Gold);
     overflow-x: hidden;
-    height: 5000px;
 }
 /**************************** Nav **********************************/
 .navbar{
@@ -94,7 +93,19 @@ body{
 .navbar .navbar-toggler:focus {
     box-shadow: none;
 }
-/*********************************************************************/
+.custom-phone{
+    color: var(--Gold);
+    text-decoration: none;
+}
+.custom-phone:hover{
+    color: var(--lightGold);
+}
+.custom-phone-icon-nav{
+    color: var(--lightGold);
+    font-size: 15px;
+}
+/***********************************cover sec **********************************/
+
 .cover-sec{
   margin-top: 7%;
   height: 65vh;
@@ -148,7 +159,7 @@ body{
     -o-transform: scale(1.6);
     z-index: -99;
 }
-/***************************************************/
+/*************************count sec **************************/
 
 .middle-count{
     background-color: var(--Gold);
@@ -160,7 +171,7 @@ body{
     padding-top: 35px;
    
 }
-/*************************************************/
+/************************collection sec *************************/
 
 .collection-sec .container .row{
     padding-top: 25px;
@@ -214,14 +225,12 @@ body{
     background-color: var(--Gold);
     border: var(--Gold) 2px solid;
 }
-/***************************************************************/
+/******************************************gallery section *********************/
 .gallery{
-    z-index: -99;
-}
-.container-fluid{
     background-image: url(../imgs/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    z-index: -99;
 }
 .slide-container {
     max-width: 1120px;
@@ -284,13 +293,13 @@ body{
 .gallery-btn:active,
 .gallery-btn:focus,
 .gallery-btn:focus-visible{
-    background-color: var(--Gold);
-    color: var(--darkColor);
+    background-color: transparent;
+    color: var(--Gold);
     cursor: pointer;
-    border: var(--Gold)
+    border: none;
 }
 :not(.btn-check)+.btn:active{
-    background-color: var(--Gold);
+    background-color: transparent;
 }
 .swiper-navBtn {
     color: var(--Gold);
@@ -322,7 +331,7 @@ body{
 .swiper-pagination-bullet-active {
     background-color: var(--lightGold);
 }
-/*****************************************************/
+/************************************* about sec ****************/
 
 .about-right{
     text-align: center;
@@ -354,96 +363,151 @@ body{
 .about-text{
     line-height: 1.9;
 }
-/**********************************************/
-.slider-three-subscribe {
-    position: relative;
+/*************************subscribe sec *********************/
+
+.subscribe{
     background-color: var(--lightGold);
 }
-
-.subscribe-content {
-  padding-top: 0%;
-
-}
-
-.subscribe-left {
-   
-} 
-
- .subscribe-left img {
-    width: 100%;
-    max-width: 325px;
-}
-
-.subscribe-content-left {
-    padding-top: 10%;
-}
-
-.top-subscribe .h-one,
-.top-subscribe .h-two {
-    font-size: 35px;
-    font-family: 'Playfair Display', serif;
+.blackColor{
     color: var(--darkColor);
-    text-transform: capitalize;
+    font-family: "calisga", sans-serif;
+}
+.newsletter-input {
+    border: none;
+    border-bottom: 2px solid #ccaa60;
+    background-color: transparent;
+    height: 6.5vh;
+    width: 58%;
+    color: var(--darkColor);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
 }
 
-.top-subscribe .h-two {
+.newsletter-input:hover {
+    background-color: var(--lightGold);
+    border: 2px solid var(--Gold);
+}
+
+.newsletter-btn {
+    background: var(--darkColor);
+    border: none;
+    color: var(--Gold);
+    font-size: 25px;
+    font-weight: bolder;
+    height: 6.5vh;
+    width: 58%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    transition-duration: 0.2s;
+}
+.newsletter-btn:hover {
+    transform: scale(1.03, 1.03);
+    background-color: var(--Gold);
+    color: var(--darkColor);
+}
+::-webkit-input-placeholder,
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+/**************************************map sec ******************/
+.slider-five-map {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.slider-five-map .container {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+}
+
+.map-left iframe {
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 350px;
+}
+
+.map-right .top-map h5,
+.middle-map h5,
+.buttom-map h5 {
+    font-family: "calisga", sans-serif;
+    color: var(--Gold);
+}
+
+.top-map p,
+.middle-map a,
+.buttom-map a,
+.middle-map span {
+  
+    color: var(--lightColor);
+}
+
+.middle-map a,
+.buttom-map a,
+.middle-map span {
+    text-decoration: none;
+    
+}
+
+.middle-map a:hover,
+.buttom-map a:hover,
+.middle-map span:hover {
+    color: var(--Gold);
+    cursor: pointer;
+}
+
+.buttom-map a {
+    font-size: 25px;
+}
+
+.map-right {
+    position: relative;
+}
+.buttom-map a i {
+    font-size: 30px;
+    padding-right: 5px;
+}
+/*************************footer*******************/
+footer {
+    background-color: var(--darkColor);
+}
+
+.left-footer {
+    padding: 10px 0px;
+}
+
+.right-footer {
+    text-align: end;
+    padding-top: 10px;
+}
+
+.right-footer a {
+    color: var(--Gold);
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.middele-footer {
+    font-size: 18px;
+    padding: 15px 0px;
+    color: var(--Gold);
     text-align: center;
 }
-
-.end-subscribe {
-    padding-top: 5%;
-    /* z-index: 99; */
+.right-footer a:hover{
+    color: var(--lightColor);
 }
 
-.group-input input {
-    width: 60%;
-    height: 45px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    border: none;
-    margin-right: -45px;
-    padding-right: 55px;
-    padding-left: 12px;
-    outline: none;
-    background-color: var(--lightColor);
-}
-
-::-webkit-input-placeholder,
-::placeholder,
-.group-input button {
-    text-transform: capitalize;
-    font-size: 18px;
-}
-
-.group-input button {
-    width: 40%;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    border: none;
-    background-color: var(--darkColor);
-    color: var(--Gold);
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.group-input button:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-
-}
-
-
-/* responsive  */
+/* responsive  media */
 @media screen and (max-width : 480px) and (min-width:300px){
     .brand-name {
             font-size: 15px;
@@ -470,6 +534,10 @@ body{
         text-align: center;
         padding-right: 0;
     }
+         .footer-row,
+         .footer-row .right-footer {
+             text-align: center;
+         }
 }
 @media screen and (max-width : 1400px) and (min-width : 1200px){
     .cover-right img {
@@ -555,6 +623,9 @@ body{
     .num{
         padding-bottom: 20px;
     }
+    .subscribe-img{
+        width: 100%;
+    }
 }
 @media screen and (max-width : 769px) and (min-width : 300px) {
     .upper-img {
@@ -631,6 +702,12 @@ body{
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
         margin-left: 25%;
+    }
+    .newsletter-btn{
+        font-size: 20px;
+    }
+    .center-gmail{
+        display: none;
     }
 }
 
