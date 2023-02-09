@@ -262,7 +262,9 @@ body {
     background-color: var(--Gold);
     border: var(--Gold) 2px solid;
 }
-
+.collection-link{
+    text-align: initial;
+}
 /******************************************gallery section *********************/
 .gallery {
     background-image: url(../imgs/background.png);
@@ -321,7 +323,6 @@ body {
 
 .name {
     color: var(--lightGold);
-    padding-top: 8px;
 }
 
 .button-more {
@@ -343,9 +344,17 @@ body {
     color: var(--Gold);
     cursor: pointer;
     border: none;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 
 :not(.btn-check)+.btn:active {
+    background-color: transparent;
+}
+.btn-outline-warning{
     background-color: transparent;
 }
 
@@ -467,7 +476,7 @@ body {
 
 ::-webkit-input-placeholder,
 ::placeholder {
-    color: rgb(255, 255, 255);
+    color: var(--darkColor)
 }
 
 /**************************************map sec ******************/
@@ -579,8 +588,45 @@ footer {
 
 }
 
-.gallery-collection-txt {
+.gallery-collection-heading {
     font-family: "calisga", sans-serif;
+}
+.gallery-img-row img{
+    width: 100%;
+    max-width: 300px;
+    border-radius:15px;
+}
+/* ---------------------------------------up btn  start */
+#upbtn {
+    border-style: none;
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    display: none;
+    cursor: pointer;
+    border: #af7f3a 1px solid;
+    width: 30px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    text-align: center;
+    height: 27px;
+
+}
+#upbtn:hover{
+    color: var(--darkColor);
+    background-color: var(--Gold);
+}
+.iconup {
+   
+    color: var(--goldcolor);
+}
+
+.iconup:hover {
+    /* transform: scale(1.2, 1.2); */
+
 }
 
 /* responsive  media */
@@ -883,28 +929,4 @@ footer {
 }
 
 
-/* ---------------------------------------up btn  start */
-#upbtn {
-    border-style: none;
-    position: fixed;
-    right: 15px;
-    bottom: 20px;
-    display: none;
-    cursor: pointer;
-}
 
-.iconup {
-    width: 16px;
-    height: 16px;
-    margin: 8px;
-    color: var(--goldcolor);
-    border: 3px solid var(--goldcolor);
-    border-radius: 50%;
-    padding: 7px;
-    transition-duration: 0.2s;
-
-}
-
-.iconup:hover {
-    transform: scale(1.2, 1.2);
-}
